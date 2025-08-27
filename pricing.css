@@ -1,0 +1,73 @@
+.pricing-hero {
+    background: linear-gradient(135deg, rgba(128, 0, 0, 0.1) 0%, rgba(204, 153, 51, 0.1) 100%);
+}
+
+.alternate-bg {
+    background-color: #f9f9f9;
+}
+
+.two-cards {
+    justify-content: space-around;
+}
+
+.single-card {
+    justify-content: center;
+}
+
+.pricing-cards.two-cards .pricing-card,
+.pricing-cards.single-card .pricing-card {
+    max-width: 400px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+.contact-info {
+    text-align: center;
+    color: #555;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: var(--maroon);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+    }
+    
+    .two-cards, .single-card {
+        align-items: center;
+    }
+}
